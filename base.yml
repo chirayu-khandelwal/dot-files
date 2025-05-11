@@ -1,0 +1,124 @@
+matches:
+  # -----------------------
+  # Basic Text Replacements
+  # -----------------------
+  - trigger: ":espanso"
+    replace: "Hi there!"
+
+  - trigger: ":n"
+    replace: "Chirayu Khandelwal"
+
+  - trigger: ":un"
+    replace: "lightshadow03"
+
+  - trigger: ":fr"
+    replace: "flatpak run "
+
+  - trigger: ":vlcvm"
+    replace: "vlc Videos/Movies "
+
+  # -----------------------
+  # Dynamic Replacements
+  # -----------------------
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
+  - trigger: ":shell"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo 'Hello from your shell'"
+
+  # -----------------------
+  # Emails
+  # -----------------------
+  - trigger: "/aem"
+    replace: "cmkhandelwal7@gmail.com"
+
+  - trigger: "/eem"
+    replace: "khandelwalchirayu7@gmail.com"
+
+  - trigger: "/fem"
+    replace: "gcakefcake@gmail.com"
+
+  - trigger: "/oem"
+    replace: "chirayu07khandelwal@gmail.com"
+
+  - trigger: "/sem"
+    replace: "chirayukhandelwal07@gmail.com"
+
+  - trigger: "/tem"
+    replace: "1032210449@tcetmumbai.in"
+
+  # -----------------------
+  # Links
+  # -----------------------
+  - trigger: ":gh"
+    replace: "https://github.com/chirayu-khandelwal"
+
+  - trigger: ":ln"
+    replace: "https://www.linkedin.com/in/chirayukhandelwal"
+
+  - trigger: ":x"
+    replace: "https://x.com/lightshadow_03"
+
+  # -----------------------
+  # Identity and Official Data
+  # -----------------------
+  - trigger: "/aadh"
+    replace: "618458209945"
+
+  - trigger: "/pan"
+    replace: "MANPK7660R"
+
+  - trigger: "/uid"
+    replace: "21-COMPB03-25"
+
+  - trigger: "/cn"
+    replace: "9850211950"
+
+  # -----------------------
+  # Address Information
+  # -----------------------
+  - trigger: "/addm"
+    replace: "638,Suyog-32,Samata Nagar, Thakur Village, Kandivali (E), Mumbai"
+
+  - trigger: "/adda"
+    replace: "PLOT NO. 11, FIRST LANE, GHANSHYAM NAGAR, SATURNA, SAI NAGAR, AMRAVATI, MAHARASHTRA - 444607"
+
+  # -----------------------
+  # Education Information
+  # -----------------------
+  - trigger: "/bsehs"
+    replace: "Bhawarilal Samra English High School"
+
+  - trigger: "/bbsc"
+    replace: "Brijlal Biyani Science College"
+
+  - trigger: "/hsc"
+    replace: "Maharashtra Higher Secondary School Certificate Examination"
+
+  - trigger: "/dr"
+    replace: "BE Computer Engineering"
+
+  - trigger: "/tcet"
+    replace: "Thakur College of Engineering and Technology"
+
+  - trigger: "/uni"
+    replace: "University of Mumbai"
+
+  # -----------------------
+  # Location Data
+  # -----------------------
+  - trigger: "/ami"
+    replace: "Amravati"
+
+  - trigger: "/mh"
+    replace: "Maharashtra"
